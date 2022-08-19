@@ -292,7 +292,6 @@ int main() {
     char init[16];
     unsigned char init_t[16];
 
-    printf(":");
     fgets(init, sizeof(init), stdin);
     init[strcspn(init, "\n")] = 0;
 
@@ -308,7 +307,6 @@ int main() {
 
     //データ送信
     data_send(sockfd, data, 4);
-    printf("%s\n", data);
 
     close(sockfd);
     
